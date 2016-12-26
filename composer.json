@@ -1,0 +1,27 @@
+{
+    "name": "rainbowcn/order-api",
+    "description": "Order Api.",
+    "type": "project",
+    "require": {
+        "predis/predis": "1.0.*",
+        "packaged/thrift": "0.9.*",
+        "lokielse/omnipay-unionpay" : "*",
+        "lokielse/omnipay-wechatpay": "*",
+        "lokielse/omnipay-alipay"   : "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "files": [ 
+            "vendor/rainbowcn/thrift/src/Thrift/Client/Member/THBaseMember.php",
+            "vendor/rainbowcn/thrift/src/Thrift/Client/Member/Types.php"
+        ]
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
+    }
+}
